@@ -1,2 +1,8 @@
 <h1>Michael Golden</h1>
-<p>GO PACK GO!</p>
+
+<% @posts.each do |post| %>
+<h2><%= link_to post.title, post %></h2>
+<p><%= post.content %></p>
+<hr />
+
+<% end %>
